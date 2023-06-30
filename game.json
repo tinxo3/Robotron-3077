@@ -336,6 +336,114 @@
         "name": "NewSprite4",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/shooting.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "shooting",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/shooting2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "shooting2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/shooting3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "shooting3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile explode.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "projectile explode",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile idle.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/projectile idle.png\"}",
+        "name": "projectile idle",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile idle2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/projectile idle2.png\"}",
+        "name": "projectile idle2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile explode2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "projectile explode2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile idle3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "projectile idle3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile idle4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "projectile idle4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile explode3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/projectile explode3.png\"}",
+        "name": "projectile explode3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile explode4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/projectile explode4.png\"}",
+        "name": "projectile explode4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile explode5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "projectile explode5",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -364,7 +472,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.645510570331151,
+        "zoomFactor": 0.5290357402156879,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -390,22 +498,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 1108,
-          "layer": "",
-          "name": "wall",
-          "persistentUuid": "03600eeb-071b-40e3-9c66-1d60e7886877",
-          "width": 32,
-          "x": -1,
-          "y": -9,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
           "height": 32,
           "layer": "",
           "name": "wall",
@@ -413,7 +505,7 @@
           "width": 1893,
           "x": 30,
           "y": -9,
-          "zOrder": 3,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -427,8 +519,8 @@
           "name": "wall",
           "persistentUuid": "2486c169-0103-4318-bf3e-72ccc623956c",
           "width": 32,
-          "x": 1887,
-          "y": 20,
+          "x": 1966,
+          "y": -3,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -445,71 +537,23 @@
           "width": 1858,
           "x": 31,
           "y": 1048,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "depth": 0,
+          "height": 1088,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "8b066ae1-1b9d-4991-b3ad-c30d46de0a92",
+          "width": 32,
+          "x": 0,
+          "y": -8,
           "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 1115,
-          "layer": "",
-          "name": "collision",
-          "persistentUuid": "1768f559-dabb-4e64-8909-fc8c9a02f01b",
-          "width": 32,
-          "x": -1,
-          "y": -36,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 32,
-          "layer": "",
-          "name": "collision",
-          "persistentUuid": "ce018550-3cf3-4c1b-8356-70fef2ac8e59",
-          "width": 1918,
-          "x": 27,
-          "y": -9,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 1104,
-          "layer": "",
-          "name": "collision",
-          "persistentUuid": "38244819-b141-441c-a460-fe5d60555771",
-          "width": 32,
-          "x": 1887,
-          "y": 11,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 32,
-          "layer": "",
-          "name": "collision",
-          "persistentUuid": "ab5b5e8c-794a-47a8-8688-93f061056381",
-          "width": 1912,
-          "x": -8,
-          "y": 1050,
-          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -556,11 +600,11 @@
               "BulletSpeedVariance": 0
             },
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 10000,
               "deceleration": 10000,
               "maxSpeed": 500,
-              "name": "TopDownMovement",
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "allowDiagonals": true,
               "angleOffset": 90,
               "angularMaxSpeed": 1000,
@@ -573,7 +617,7 @@
           ],
           "animations": [
             {
-              "name": "Sprites\\player",
+              "name": "idle",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -616,6 +660,53 @@
                           }
                         ]
                       ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "shooting",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "shooting2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "shooting3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -1141,24 +1232,24 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 0,
               "name": "Destruir Fuera",
-              "type": "DestroyOutsideBehavior::DestroyOutside"
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
             }
           ],
           "animations": [
             {
-              "name": "Sprites\\Projectiles",
+              "name": "projectile idle",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"projectile idle\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":36,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":2,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAkCAYAAAA5DDySAAAAAXNSR0IArs4c6QAAAFZJREFUaEPt1QERADAMArHi33SFfOagHBm7+Fv8/hOABsQTQCBeAJ8gAgjEE0AgXgArgAAC8QQQiBfACiCAQDwBBOIFsAIIIBBPAIF4AawAAgjEE8gTeMDcACXVmV2rAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1 (imported)\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":2,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAkCAYAAAA5DDySAAAAAXNSR0IArs4c6QAAARJJREFUaEPtlc0OwyAMg+HA+z8wByZ+whBlEklZhBT32G44fLbBO+OPN75/BwBIgHECqIDxAOAQRAVQAeMEUAHjAcAt8KoCKaWUE+S9f7WONIUn9EWDk7CjfVcOaiBIP7TpY5UX6bMBFPG28dCEI61SPv03DVm/b7w1OLg6SAbB1RcBCD+Ojuh0APTkzd0RGMAGkDV7BBuIvHFpBCX9P1lBEQCCQEnQcP5p9reKTuA8rScCUHo41UATwngOdTBCCADA7SC5Pzq+esddd/f33f3B8dW73fXYCTAPgA7A+b7NYLh38K5LqwPwlD47AdKhb/0fANzqjNZcSIAW6Vt1kIBbndGaCwnQIn2rDhJwqzNac30A0fCgJfweMo8AAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"resourceNames\":[\"projectile idle\",\"projectile idle2\"],\"name\":\"projectile idle\"}}",
+                  "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Sprites\\Projectiles4",
+                      "image": "projectile idle",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1191,6 +1282,72 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "projectile idle2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 21,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 21,
+                            "y": 23
+                          },
+                          {
+                            "x": 11,
+                            "y": 23
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "projectile explode",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.01,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "projectile explode5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -1250,10 +1407,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -1321,7 +1478,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "bullet"
+          "target": "shooting"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1535,10 +1692,58 @@
           "actions": [
             {
               "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bullet",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.01"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
                 "bullet",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "ANIMACIONES"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "player",
+                "",
+                "",
                 ""
               ]
             }
@@ -1594,8 +1799,20 @@
     {
       "associatedLayout": "Gameplay",
       "lastChangeTimeStamp": 0,
-      "name": "bullet",
+      "name": "shooting",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "DISPAROS"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1663,6 +1880,16 @@
                 "bullet",
                 "=",
                 "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "1"
               ]
             }
           ]
@@ -1735,6 +1962,16 @@
                 "=",
                 "1.5"
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "1"
+              ]
             }
           ]
         },
@@ -1805,6 +2042,16 @@
                 "bullet",
                 "=",
                 "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "1"
               ]
             }
           ]
@@ -1877,8 +2124,30 @@
                 "=",
                 "1.5"
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "1"
+              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "DISPAROS DIAGONALES"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1946,6 +2215,16 @@
                 "bullet",
                 "=",
                 "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "1"
               ]
             }
           ]
@@ -2017,6 +2296,16 @@
                 "=",
                 "1.5"
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "1"
+              ]
             }
           ]
         },
@@ -2086,6 +2375,16 @@
                 "bullet",
                 "=",
                 "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "1"
               ]
             }
           ]
@@ -2157,8 +2456,92 @@
                 "=",
                 "1.5"
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "1"
+              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "VOLVER A LA ANIMACION IDLE"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Down"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Up"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     }
