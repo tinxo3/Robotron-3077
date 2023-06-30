@@ -1514,7 +1514,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.44819780454104097,
+        "zoomFactor": 0.5653158055126379,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1643,6 +1643,21 @@
           "x": 609,
           "y": -21,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "75f8eb0a-d41a-4bb8-a8fb-6e569071b959",
+          "width": 0,
+          "x": 1130,
+          "y": -5,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2488,6 +2503,28 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Escape to main menu",
+          "font": "Fonts\\MICRO___.TTF",
+          "textAlignment": "left",
+          "characterSize": 100,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -2725,6 +2762,32 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Escape"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Main menu\"",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2751,7 +2814,7 @@
                 "",
                 "\"enemyspawn1\"",
                 ">",
-                "3"
+                "1"
               ]
             }
           ],
@@ -2886,7 +2949,7 @@
                 "",
                 "\"enemyspawn2\"",
                 ">",
-                "5"
+                "2"
               ]
             }
           ],
@@ -3319,7 +3382,7 @@
                 "",
                 "\"humanspawn\"",
                 ">",
-                "20"
+                "10"
               ]
             }
           ],
