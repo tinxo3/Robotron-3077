@@ -444,6 +444,402 @@
         "name": "projectile explode5",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Enemy_Basic.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\Enemy_Basic.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic5",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic6",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic7",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic8",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic9",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic10",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic11",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_Basic12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Enemy_Basic12",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_EnemyA1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites_EnemyA1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_EnemyA2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites_EnemyA2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_EnemyA3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites_EnemyA3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_EnemyA4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites_EnemyA4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA6",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA10",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Sprites_EnemyA17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Sprites_EnemyA17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Enemy_QueDispara.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\Enemy_QueDispara.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_QueDispara.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Sprites_Enemy_QueDispara.png\"}",
+        "name": "Sprites\\Enemy_QueDispara",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_QueDispara2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Sprites_Enemy_QueDispara2.png\"}",
+        "name": "Sprites\\Enemy_QueDispara2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_QueDispara3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Sprites_Enemy_QueDispara3.png\"}",
+        "name": "Sprites\\Enemy_QueDispara3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Enemy_QueDispara4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Sprites_Enemy_QueDispara4.png\"}",
+        "name": "Sprites\\Enemy_QueDispara4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_EnemyB1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites_EnemyB1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_EnemyB2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites_EnemyB2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_EnemyB3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites_EnemyB3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_EnemyB4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites_EnemyB4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectile idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\projectile idle2.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -472,7 +868,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5290357402156879,
+        "zoomFactor": 0.5843784410740975,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -554,6 +950,21 @@
           "x": 0,
           "y": -8,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Enemy1",
+          "persistentUuid": "75acf6d7-eebc-40bd-b849-9f9bae7a5d8c",
+          "width": 0,
+          "x": 934,
+          "y": 170,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1357,6 +1768,83 @@
         },
         {
           "assetStoreId": "",
+          "name": "bulletEnemy",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Destruir Fuera",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "projectile idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.01,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\projectile idle2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "projectile explode",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.01,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "projectile explode5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
           "name": "Fondo",
           "tags": "",
           "type": "Sprite",
@@ -1458,6 +1946,190 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "Enemy1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Sprites_EnemyA1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Sprites_EnemyA2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Sprites_EnemyA3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Sprites_EnemyA4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Enemy2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.15,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Sprites_EnemyB1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Sprites_EnemyB2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Sprites_EnemyB3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Sprites_EnemyB4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1499,6 +2171,24 @@
               },
               "parameters": [
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemyspawn1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemyspawn2\""
               ]
             }
           ]
@@ -1642,6 +2332,212 @@
             "textG": 0,
             "textR": 0
           },
+          "comment": "ENEMIGOS"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemyspawn1\"",
+                ">",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy1",
+                "RandomInRange(71, 1867)",
+                "RandomInRange(65, 1000)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemyspawn1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Enemy1",
+                "player",
+                "600",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "Enemy1",
+                "player",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy1",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemy1",
+                "player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "player",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemyspawn2\"",
+                ">",
+                "7"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy2",
+                "RandomInRange(71, 1867)",
+                "RandomInRange(65, 1000)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"enemyspawn2\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Enemy2",
+                "player",
+                "1500",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "Enemy2",
+                "player",
+                "50",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy1",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemy2",
+                "player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "player",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
           "comment": "COLISIONES"
         },
         {
@@ -1667,6 +2563,64 @@
               },
               "parameters": [
                 "player",
+                "wall",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemy1",
+                "wall",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Enemy1",
+                "wall",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemy2",
+                "wall",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Enemy2",
                 "wall",
                 ""
               ]
@@ -1714,6 +2668,116 @@
               },
               "parameters": [
                 "bullet",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "bullet",
+                "Enemy1",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bullet",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.01"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "bullet",
+                "Enemy2",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bullet",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.01"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy2",
                 ""
               ]
             }
