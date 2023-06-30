@@ -1617,66 +1617,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "human",
-          "persistentUuid": "f3852ec3-81ef-49f6-8df2-a12e50480c92",
-          "width": 0,
-          "x": 910,
-          "y": 664,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "human",
-          "persistentUuid": "a92f66e4-3796-4150-b0bd-437c9fbabba0",
-          "width": 0,
-          "x": 963,
-          "y": 638,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "human",
-          "persistentUuid": "75a40c65-98b5-41a6-b6ca-3108a9e42675",
-          "width": 0,
-          "x": 959,
-          "y": 692,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "human",
-          "persistentUuid": "94a72d5c-2505-4351-894a-24775afc482c",
-          "width": 0,
-          "x": 865,
-          "y": 706,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 0,
           "height": 131,
@@ -2608,6 +2548,54 @@
                 "",
                 "\"enemyspawn2\""
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"humanspawn\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"humanmovement\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "human_rescued",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "score",
+                "=",
+                "ToString(GlobalVariable(score))"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "human_limit",
+                "=",
+                "0"
+              ]
             }
           ]
         },
@@ -3109,6 +3097,35 @@
                 "value": "CollisionNP"
               },
               "parameters": [
+                "human",
+                "wall",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "human",
+                "wall",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
                 "bullet",
                 "wall",
                 "",
@@ -3296,6 +3313,94 @@
           "conditions": [
             {
               "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"humanspawn\"",
+                ">",
+                "20"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "human",
+                "RandomInRange(71, 1867)",
+                "RandomInRange(65, 1000)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"humanspawn\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "human_limit",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "human",
+                "\"humanmovement\"",
+                ">=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVersPos"
+              },
+              "parameters": [
+                "human",
+                "RandomInRange(71, 1867)",
+                "RandomInRange(65,1000)",
+                "80",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"humanmovement\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -3373,33 +3478,34 @@
                 "\"Gameplay\"",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "human_rescued",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "score",
-                "=",
-                "ToString(GlobalVariable(score))"
-              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "human_limit",
+                ">=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"humanspawn\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
