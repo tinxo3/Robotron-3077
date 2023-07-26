@@ -1096,6 +1096,42 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/47067128526b3c56071d01ec19f87649cd4b00f47432cb229e2c3cea96489b6b_Brown Button With Shadow_Pressed.png",
           "name": "Brown Button With Shadow_Pressed.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BoxGreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BoxGreen.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BoxYellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BoxYellow.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BoxBlue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BoxBlue.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BoxRed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BoxRed.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1514,7 +1550,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5653158055126379,
+        "zoomFactor": 0.4950840073748952,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2533,6 +2569,250 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Down",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\BoxGreen.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Left",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\BoxYellow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Up",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\BoxBlue.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Right",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\BoxRed.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -13164,6 +13444,66 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "f694cf2e-361f-42ce-8340-5040b14d22b5",
+          "width": 0,
+          "x": 672,
+          "y": 704,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "1ec5cf96-a614-4ae0-9ad3-febcfec67273",
+          "width": 0,
+          "x": 1344,
+          "y": 288,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "778ea946-c3ff-4d76-99bd-65e86cf00a83",
+          "width": 0,
+          "x": 0,
+          "y": 288,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "bacb48c9-b351-4ad7-af1c-4da9ffc3c086",
+          "width": 0,
+          "x": 672,
+          "y": -128,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -13176,7 +13516,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.5079575118131762,
         "windowMask": false
       }
     },
@@ -14144,6 +14484,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "798596ed-7318-4499-8254-0b7ac63edd9e",
+          "width": 0,
+          "x": 0,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "6fa2a711-76d8-4324-96f6-d1ea29f4783c",
+          "width": 0,
+          "x": 672,
+          "y": -128,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "02cf9372-9a19-452b-96f5-c2c480026cc2",
+          "width": 0,
+          "x": 1344,
+          "y": 288,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -14156,7 +14541,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.49138775453293576,
         "windowMask": false
       }
     },
@@ -15109,6 +15494,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "3e714ba5-5a4a-4d7b-b6ca-7a9b47038d3b",
+          "width": 0,
+          "x": 1344,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "b5b51903-3f2f-4a03-bed3-7691660ef327",
+          "width": 0,
+          "x": 672,
+          "y": -128,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "b267f09b-8213-4236-8ff1-b3bb3fc73db5",
+          "width": 0,
+          "x": 672,
+          "y": 704,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -15121,7 +15551,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.47535850871269364,
         "windowMask": false
       }
     },
@@ -16074,6 +16504,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "ce79fef7-2fa3-4cad-ab10-0a1dd920610b",
+          "width": 0,
+          "x": 1344,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "cc6e3acd-ce03-49e4-a4b2-739fb260f45b",
+          "width": 0,
+          "x": 672,
+          "y": 704,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "28c9fdcc-8f47-4e0a-b6cc-6f9cbd3ab014",
+          "width": 0,
+          "x": 0,
+          "y": 288,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -16086,7 +16561,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.619791666666667,
         "windowMask": false
       }
     },
@@ -17039,6 +17514,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "db6288bd-dc4e-48cf-ba94-aa95f629dece",
+          "width": 0,
+          "x": 672,
+          "y": 704,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "66ca24a0-dc20-4cab-afdb-616c5cdf65b6",
+          "width": 0,
+          "x": 0,
+          "y": 288,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "73ef3222-982e-47d0-95fe-38374ceb43f9",
+          "width": 0,
+          "x": 672,
+          "y": -128,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -17051,7 +17571,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.5610952083582074,
         "windowMask": false
       }
     },
@@ -18019,6 +18539,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "c2d8220b-acdc-4497-8127-f13b6d63f6b5",
+          "width": 0,
+          "x": 672,
+          "y": 704,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "66d35d18-06cf-4036-b6d0-33e0a5e83dec",
+          "width": 0,
+          "x": 672,
+          "y": -128,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -18031,7 +18581,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.542792080247328,
         "windowMask": false
       }
     },
@@ -18999,6 +19549,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "380d04e3-8185-4987-8939-eaa85ddc9834",
+          "width": 0,
+          "x": 1344,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "c3311c5c-99aa-4145-823e-b0d7d854f763",
+          "width": 0,
+          "x": 0,
+          "y": 288,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -19011,7 +19591,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.0891751186210012,
+        "zoomFactor": 0.45985214267363367,
         "windowMask": false
       }
     },
@@ -19994,6 +20574,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "56291bae-e916-4afa-a85d-a154e8196ea9",
+          "width": 0,
+          "x": 672,
+          "y": -128,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "3c7f0c9a-6ad8-4cef-8bb7-550c8c3cde2d",
+          "width": 0,
+          "x": 1344,
+          "y": 288,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -20006,7 +20616,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.4598521426736336,
         "windowMask": false
       }
     },
@@ -20974,6 +21584,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "06e2c728-7791-40f3-8e33-fdb1a4e8f76c",
+          "width": 0,
+          "x": 672,
+          "y": -128,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "894b7071-9423-4067-be70-aeec1a0944eb",
+          "width": 0,
+          "x": 0,
+          "y": 288,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -20986,7 +21626,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.4598521426736336,
         "windowMask": false
       }
     },
@@ -21969,6 +22609,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "fcf7bd9d-05dd-4565-bd7c-f1724b4a2847",
+          "width": 0,
+          "x": 1344,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "370e05bb-017a-45a8-b236-4c593646ceb4",
+          "width": 0,
+          "x": 672,
+          "y": 704,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -21981,7 +22651,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.619791666666667,
         "windowMask": false
       }
     },
@@ -22949,6 +23619,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "adc3fd62-a9ab-426d-880e-d91c29780237",
+          "width": 0,
+          "x": 672,
+          "y": 704,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "f2fa8ebf-c88a-49b4-8a18-a6871f2409b4",
+          "width": 0,
+          "x": 0,
+          "y": 288,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -22961,7 +23661,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.542792080247328,
         "windowMask": false
       }
     },
@@ -23944,6 +24644,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Up",
+          "persistentUuid": "0bb2ed67-f4ef-4b83-87ac-465f0d07bad4",
+          "width": 0,
+          "x": 672,
+          "y": -128,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -23956,7 +24671,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.49138775453293576,
         "windowMask": false
       }
     },
@@ -24939,6 +25654,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Right",
+          "persistentUuid": "dc261c69-fa01-49d1-a621-50547cca552a",
+          "width": 0,
+          "x": 1344,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -24951,7 +25681,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.731578646375301,
         "windowMask": false
       }
     },
@@ -25934,6 +26664,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Down",
+          "persistentUuid": "54ac6c28-1c76-4212-bc29-dcc135d16cc7",
+          "width": 0,
+          "x": 672,
+          "y": 704,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -25946,7 +26691,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.40272258333259164,
         "windowMask": false
       }
     },
@@ -26929,6 +27674,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Left",
+          "persistentUuid": "972ed08c-8cd9-4446-8237-e50ec93ec980",
+          "width": 0,
+          "x": 0,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -26941,7 +27701,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1259024631360846,
+        "zoomFactor": 0.5079575118131737,
         "windowMask": false
       }
     }
