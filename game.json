@@ -1550,7 +1550,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4950840073748952,
+        "zoomFactor": 0.49508400737489533,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1568,70 +1568,6 @@
           "x": 954,
           "y": 501,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 32,
-          "layer": "",
-          "name": "wall",
-          "persistentUuid": "95fa7d7a-51cd-473d-8d7b-b9aab52924bb",
-          "width": 1913,
-          "x": 24,
-          "y": 60,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 1027,
-          "layer": "",
-          "name": "wall",
-          "persistentUuid": "2486c169-0103-4318-bf3e-72ccc623956c",
-          "width": 32,
-          "x": 1936,
-          "y": 59,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 32,
-          "layer": "",
-          "name": "wall",
-          "persistentUuid": "e412b202-5e6f-47b6-9c8c-5db46d1ff90a",
-          "width": 1914,
-          "x": 23,
-          "y": 1048,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 180,
-          "customSize": true,
-          "depth": 0,
-          "height": 1025,
-          "layer": "",
-          "name": "wall",
-          "persistentUuid": "8b066ae1-1b9d-4991-b3ad-c30d46de0a92",
-          "width": 32,
-          "x": -7,
-          "y": 58,
-          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1672,7 +1608,7 @@
           "customSize": true,
           "depth": 0,
           "height": 144,
-          "layer": "",
+          "layer": "HUD",
           "name": "score",
           "persistentUuid": "230ca0ae-73b8-480f-90d4-11727efc02ed",
           "width": 135,
@@ -1687,7 +1623,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "HUD",
           "name": "NewText",
           "persistentUuid": "75f8eb0a-d41a-4bb8-a8fb-6e569071b959",
           "width": 0,
@@ -1701,7 +1637,6 @@
       ],
       "objects": [
         {
-          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "player",
           "tags": "",
@@ -1903,7 +1838,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "bullet",
           "tags": "",
@@ -2037,7 +1971,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "bulletEnemy",
           "tags": "",
@@ -2115,7 +2048,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Fondo",
           "tags": "",
@@ -2158,7 +2090,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "collision",
           "tags": "",
@@ -2221,7 +2152,6 @@
           "behaviors": []
         },
         {
-          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemy1",
           "tags": "",
@@ -2314,7 +2244,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemy2",
           "tags": "",
@@ -2407,7 +2336,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "human",
           "tags": "",
@@ -2571,7 +2499,6 @@
           }
         },
         {
-          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Down",
           "tags": "",
@@ -2632,7 +2559,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Left",
           "tags": "",
@@ -2693,7 +2619,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Up",
           "tags": "",
@@ -2754,7 +2679,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Right",
           "tags": "",
@@ -3092,6 +3016,7 @@
           "comment": "ENEMIGOS"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3131,6 +3056,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3160,6 +3086,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "Enemy1",
           "conditions": [
@@ -3227,6 +3154,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3266,6 +3194,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3295,6 +3224,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "Enemy1",
           "conditions": [
@@ -3854,6 +3784,24 @@
               "parameters": [
                 "",
                 "\"humanspawn\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "player",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -13516,7 +13464,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5079575118131762,
+        "zoomFactor": 0.4598521426736358,
         "windowMask": false
       }
     },
