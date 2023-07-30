@@ -1609,6 +1609,51 @@
         "name": "Sprites\\ROBOTRON_LASER",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Robotron Bala enemigo.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Robotron Bala enemigo",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/ROBOTRON_POWERSUIT.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\ROBOTRON_POWERSUIT.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_ROBOTRON_POWERSUIT.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\ROBOTRON_POWERSUIT",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_ROBOTRON_POWERSUIT2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\ROBOTRON_POWERSUIT2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_ROBOTRON_POWERSUIT3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\ROBOTRON_POWERSUIT3",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2236,6 +2281,38 @@
           "x": 562,
           "y": 397,
           "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 51,
+          "layer": "",
+          "name": "bulletenhance",
+          "persistentUuid": "cade4570-3fdc-4933-9a78-2e1150cf278d",
+          "width": 47,
+          "x": 579,
+          "y": 285,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 90,
+          "layer": "",
+          "name": "speeeeeeed",
+          "persistentUuid": "7e67ffc7-f5fd-43ea-8790-91761227cb35",
+          "width": 138,
+          "x": 533,
+          "y": 474,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7660,6 +7737,130 @@
                           {
                             "x": 640,
                             "y": 640
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "bulletenhance",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Sprites\\Robotron Bala enemigo",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprites\\Robotron Bala enemigo",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 40,
+                            "y": 40
+                          },
+                          {
+                            "x": 280,
+                            "y": 40
+                          },
+                          {
+                            "x": 280,
+                            "y": 280
+                          },
+                          {
+                            "x": 40,
+                            "y": 280
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "speeeeeeed",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Sprites\\ROBOTRON_POWERSUIT",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprites\\ROBOTRON_POWERSUIT3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 263,
+                            "y": 150
+                          },
+                          {
+                            "x": 397,
+                            "y": 150
+                          },
+                          {
+                            "x": 397,
+                            "y": 490
+                          },
+                          {
+                            "x": 263,
+                            "y": 490
                           }
                         ]
                       ]
@@ -15001,6 +15202,85 @@
           "conditions": [
             {
               "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "bulletenhance",
+                "player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bulletenhance",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetAngleVarianceOp"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "=",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "speeeeeeed",
+                "player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovement",
+                "=",
+                "700"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "speeeeeeed",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "Animation"
               },
               "parameters": [
@@ -15020,6 +15300,18 @@
                 "FireBullet",
                 "=",
                 "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "=",
+                "1.5",
                 ""
               ]
             }
