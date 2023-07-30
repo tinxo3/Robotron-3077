@@ -1582,6 +1582,33 @@
         "name": "assets\\BoxRandomSpawn.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Robotron Powerup.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\Robotron Powerup.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/ROBOTRON_LASER.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\ROBOTRON_LASER.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_ROBOTRON_LASER.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Sprites_ROBOTRON_LASER.png\"}",
+        "name": "Sprites\\ROBOTRON_LASER",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2000,7 +2027,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749988978,
+        "zoomFactor": 0.6455105703311597,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2178,6 +2205,37 @@
           "x": 594,
           "y": 547,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "morebullets",
+          "persistentUuid": "5dfec78d-8206-45dd-898f-b97f794ed415",
+          "width": 0,
+          "x": 554,
+          "y": 343,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 36,
+          "layer": "",
+          "name": "burst",
+          "persistentUuid": "d9a5f54c-8fab-4b8d-a510-600015694635",
+          "width": 55,
+          "x": 562,
+          "y": 397,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7479,6 +7537,129 @@
                           {
                             "x": 544,
                             "y": 763
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "morebullets",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprites\\Robotron Powerup.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 36,
+                            "y": 1
+                          },
+                          {
+                            "x": 60,
+                            "y": 1
+                          },
+                          {
+                            "x": 60,
+                            "y": 31
+                          },
+                          {
+                            "x": 36,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "burst",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Sprites\\ROBOTRON_LASER",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprites\\ROBOTRON_LASER",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 640,
+                            "y": 20
+                          },
+                          {
+                            "x": 1280,
+                            "y": 20
+                          },
+                          {
+                            "x": 1280,
+                            "y": 640
+                          },
+                          {
+                            "x": 640,
+                            "y": 640
                           }
                         ]
                       ]
@@ -14718,6 +14899,127 @@
               "parameters": [
                 "",
                 "\"Gameplay\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "ITEMS"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "morebullets",
+                "player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "=",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "morebullets",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "burst",
+                "player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "=",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "burst",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Animation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+              },
+              "parameters": [
+                "player",
+                "FireBullet",
+                "=",
+                "1",
                 ""
               ]
             }
