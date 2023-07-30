@@ -1663,6 +1663,24 @@
         "name": "Damage",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/ROBOTRON_HEART.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Sprites/ROBOTRON_HEART.png\",\"extension\":\".png\"}",
+        "name": "Sprites\\ROBOTRON_HEART.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_ROBOTRON_HEART.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\ROBOTRON_HEART",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2314,14 +2332,62 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 90,
+          "height": 81,
           "layer": "",
-          "name": "speeeeeeed",
-          "persistentUuid": "7e67ffc7-f5fd-43ea-8790-91761227cb35",
-          "width": 138,
-          "x": 536,
-          "y": 437,
+          "name": "Armor",
+          "persistentUuid": "5e4672e6-29a9-4165-9282-5f84dbb012db",
+          "width": 152,
+          "x": 529,
+          "y": 431,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 47,
+          "layer": "",
+          "name": "Health",
+          "persistentUuid": "1d870cfe-7818-4df7-aa3f-e3ce615e7ae5",
+          "width": 76,
+          "x": 653,
+          "y": 287,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 31,
+          "layer": "",
+          "name": "Health1",
+          "persistentUuid": "bed34672-bda1-4e0d-8a29-363c8d4df632",
+          "width": 53,
+          "x": 644,
+          "y": 296,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 34,
+          "layer": "",
+          "name": "Health2",
+          "persistentUuid": "cad53caa-cd77-447d-ae48-fd5a9d64b95a",
+          "width": 68,
+          "x": 638,
+          "y": 335,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2373,8 +2439,8 @@
               "type": "Health::Health",
               "Health": 6,
               "CurrentHealth": 0,
-              "MaxHealth": 0,
-              "DamageCooldown": 0,
+              "MaxHealth": 6,
+              "DamageCooldown": 1.5,
               "IsHealthJustDamaged": false,
               "HealthRegenRate": 0,
               "HealthRegenDelay": 0,
@@ -2575,7 +2641,7 @@
                 {
                   "looping": true,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.1,
+                  "timeBetweenFrames": 0.7,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -2596,7 +2662,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Damage",
+                      "image": "Sprites\\car1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -7913,7 +7979,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "speeeeeeed",
+          "name": "Armor",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -7962,6 +8028,130 @@
                           {
                             "x": 263,
                             "y": 490
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Health1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Sprites\\ROBOTRON_HEART",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprites\\ROBOTRON_HEART.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 500,
+                            "y": 0
+                          },
+                          {
+                            "x": 500,
+                            "y": 320
+                          },
+                          {
+                            "x": 0,
+                            "y": 320
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Health2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Sprites\\ROBOTRON_HEART",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprites\\ROBOTRON_HEART",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 100,
+                            "y": 0
+                          },
+                          {
+                            "x": 540,
+                            "y": 0
+                          },
+                          {
+                            "x": 540,
+                            "y": 320
+                          },
+                          {
+                            "x": 100,
+                            "y": 320
                           }
                         ]
                       ]
@@ -8178,6 +8368,121 @@
                 "0",
                 "0",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "VIDA Y DAÑO"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::Health"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "=",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "player"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Gameplay\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "6",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsJustDamaged"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::TriggerDamageCooldown"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "3"
               ]
             }
           ]
@@ -9121,48 +9426,14 @@
             },
             {
               "type": {
-                "value": "ActivateBehavior"
+                "value": "Health::Health::Hit"
               },
               "parameters": [
                 "player",
-                "TopDownMovement",
-                "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "player",
-                "=",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "player",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Gameplay\"",
+                "Health",
+                "1",
+                "no",
+                "no",
                 ""
               ]
             }
@@ -9298,48 +9569,14 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ActivateBehavior"
+                    "value": "Health::Health::Hit"
                   },
                   "parameters": [
                     "player",
-                    "TopDownMovement",
-                    "no"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "player",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "player",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Gameplay\"",
+                    "Health",
+                    "2",
+                    "no",
+                    "no",
                     ""
                   ]
                 }
@@ -9436,48 +9673,14 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ActivateBehavior"
+                    "value": "Health::Health::Hit"
                   },
                   "parameters": [
                     "player",
-                    "TopDownMovement",
-                    "no"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "player",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "player",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Gameplay\"",
+                    "Health",
+                    "2",
+                    "no",
+                    "no",
                     ""
                   ]
                 }
@@ -9687,48 +9890,14 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ActivateBehavior"
+                    "value": "Health::Health::Hit"
                   },
                   "parameters": [
                     "player",
-                    "TopDownMovement",
-                    "no"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "player",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "player",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Gameplay\"",
+                    "Health",
+                    "2",
+                    "no",
+                    "no",
                     ""
                   ]
                 }
@@ -15346,7 +15515,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "speeeeeeed",
+                "Armor",
                 "player",
                 "",
                 "",
@@ -15357,13 +15526,14 @@
           "actions": [
             {
               "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
+                "value": "Health::Health::SetMaxHealthOp"
               },
               "parameters": [
                 "player",
-                "TopDownMovement",
+                "Health",
                 "=",
-                "700"
+                "8",
+                ""
               ]
             },
             {
@@ -15371,7 +15541,85 @@
                 "value": "Delete"
               },
               "parameters": [
-                "speeeeeeed",
+                "Armor",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "Health1",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Health1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "Health2",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Health2",
                 ""
               ]
             }
@@ -15413,6 +15661,18 @@
                 "FireBullet",
                 "=",
                 "1.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetMaxHealthOp"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "=",
+                "6",
                 ""
               ]
             }
