@@ -1789,6 +1789,15 @@
         "name": "Sprites\\Barra6.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BoxHumans.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BoxHumans.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2301,13 +2310,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 131,
+          "height": 140,
           "layer": "HUD",
           "name": "ui",
           "persistentUuid": "7a5b5511-18ee-4acb-8d60-945a379de966",
-          "width": 609,
-          "x": 1227,
-          "y": 11,
+          "width": 601,
+          "x": 800,
+          "y": 3,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -2322,7 +2331,7 @@
           "name": "score",
           "persistentUuid": "230ca0ae-73b8-480f-90d4-11727efc02ed",
           "width": 135,
-          "x": 1828,
+          "x": 1353,
           "y": 2,
           "zOrder": 12,
           "numberProperties": [],
@@ -2371,21 +2380,6 @@
           "x": 76,
           "y": 132,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "human",
-          "persistentUuid": "48f39771-a02d-48c3-b623-f808b36fb456",
-          "width": 0,
-          "x": 594,
-          "y": 547,
-          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5295,7 +5289,7 @@
           "content": {
             "text": "[outline=red]Humans rescued:[/outline] ",
             "opacity": 255,
-            "fontSize": 100,
+            "fontSize": 90,
             "visible": true,
             "color": "255;255;255",
             "fontFamily": "Fonts\\MICRO___.TTF",
@@ -5325,7 +5319,7 @@
           "string": "0",
           "font": "Fonts\\MICRO___.TTF",
           "textAlignment": "left",
-          "characterSize": 150,
+          "characterSize": 125,
           "color": {
             "b": 255,
             "g": 255,
@@ -5442,6 +5436,18 @@
           "name": "EnemySpawn",
           "tags": "",
           "texture": "assets\\BoxRandomSpawn.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "HumanSpawn",
+          "tags": "",
+          "texture": "assets\\BoxHumans.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -8675,15 +8681,6 @@
             },
             {
               "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"humanmovement\""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -8704,10 +8701,10 @@
             },
             {
               "type": {
-                "value": "ModVarGlobal"
+                "value": "ModVarScene"
               },
               "parameters": [
-                "human_limit",
+                "HumanLimit",
                 "=",
                 "0"
               ]
@@ -8766,7 +8763,7 @@
               },
               "parameters": [
                 "",
-                "1.5",
+                "1.4",
                 "",
                 ""
               ]
@@ -8791,6 +8788,17 @@
                 "1",
                 "0",
                 "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetWindowSize"
+              },
+              "parameters": [
+                "",
+                "1122",
+                "841",
                 ""
               ]
             }
@@ -8818,7 +8826,7 @@
               "parameters": [
                 "player",
                 "Health",
-                "=",
+                "<=",
                 "0",
                 ""
               ]
@@ -10377,6 +10385,18 @@
                 "no",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "CameraShake::ShakeCamera"
+              },
+              "parameters": [
+                "",
+                "0.5",
+                "0",
+                "0",
+                ""
+              ]
             }
           ]
         },
@@ -10756,7 +10776,7 @@
                     "bulletEnemy",
                     "player.X()+16",
                     "player.Y()+16",
-                    "125",
+                    "250",
                     "1"
                   ]
                 },
@@ -11302,6 +11322,7 @@
           "comment": "HUMANOS"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -11351,40 +11372,224 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "HumanSpawn",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "HumanLimit",
+                    "<",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutHasard"
+                      },
+                      "parameters": [
+                        "EnemySpawn",
+                        "HumanSpawn"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "HumanSpawn",
+                        "RandomHuman",
+                        "=",
+                        "RandomInRange(1,100)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "HumanSpawn",
+                            "RandomHuman",
+                            ">=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "HumanSpawn",
+                            "RandomHuman",
+                            "<=",
+                            "80"
+                          ]
+                        }
+                      ],
+                      "actions": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "HumanSpawn",
+                            "RandomHuman",
+                            ">=",
+                            "81"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "HumanSpawn",
+                            "RandomHuman",
+                            "<=",
+                            "100"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "human",
+                            "HumanSpawn.X()",
+                            "HumanSpawn.Y()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "HumanLimit",
+                            "+",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "HumanSpawn",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "HumanLimit",
+                    ">=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "HumanSpawn",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "CompareTimer"
+                "value": "VarScene"
               },
               "parameters": [
-                "human",
-                "\"humanmovement\"",
+                "HumanLimit",
                 ">=",
-                "5"
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "",
+                "human",
+                "<",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "human_rescued",
+                "=",
+                "0"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "AddForceVersPos"
-              },
-              "parameters": [
-                "human",
-                "RandomInRange(71, 1867)",
-                "RandomInRange(65,1000)",
-                "80",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
+                "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"humanmovement\""
+                "\"Gameplay\"",
+                ""
               ]
             }
           ]
@@ -11448,6 +11653,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -11475,6 +11681,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -36393,6 +36600,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "c68e98ad-fe63-48ac-9b69-24fda9325775",
+          "width": 0,
+          "x": 512,
+          "y": 448,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -36405,7 +36627,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5610952083582227,
+        "zoomFactor": 0.5079575118131877,
         "windowMask": false
       }
     },
@@ -40129,6 +40351,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "d757db51-aeb6-4293-9919-878b005b4dfa",
+          "width": 0,
+          "x": 512,
+          "y": 192,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -41065,6 +41302,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "04951641-79dd-4ed1-853a-82cea82531e6",
+          "width": 0,
+          "x": 512,
+          "y": 384,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -41178,22 +41430,6 @@
           "initialVariables": []
         },
         {
-          "angle": 90,
-          "customSize": true,
-          "depth": 0,
-          "height": 156,
-          "layer": "",
-          "name": "car1",
-          "persistentUuid": "6bd83548-8e5d-4efa-a13e-2bef5e7f6792",
-          "width": 69,
-          "x": 73,
-          "y": 409,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 75,
           "customSize": true,
           "depth": 0,
@@ -41252,22 +41488,6 @@
           "width": 69,
           "x": 707,
           "y": 436,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 271,
-          "customSize": true,
-          "depth": 0,
-          "height": 156,
-          "layer": "",
-          "name": "car1",
-          "persistentUuid": "41fdcb2a-2ad5-4b8d-a201-85a670007aaa",
-          "width": 69,
-          "x": 868,
-          "y": 430,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -41392,6 +41612,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "4b875d65-bbed-4bfe-a5d4-80c8052b36ea",
+          "width": 0,
+          "x": 512,
+          "y": 576,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -41404,7 +41639,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4598521426736384,
+        "zoomFactor": 0.5610952083582134,
         "windowMask": false
       }
     },
@@ -42061,6 +42296,21 @@
           "x": 832,
           "y": 64,
           "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "4d2ae6f6-11bf-4338-8a84-02f33bd3aad6",
+          "width": 0,
+          "x": 512,
+          "y": 416,
+          "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -42787,6 +43037,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "d3966adb-1672-44b1-b41b-7f3373a177bf",
+          "width": 0,
+          "x": 512,
+          "y": 672,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -43093,6 +43358,21 @@
           "x": 864,
           "y": 128,
           "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "f5c7af83-0049-4281-b29d-35097a7022f7",
+          "width": 0,
+          "x": 64,
+          "y": 320,
+          "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -46404,6 +46684,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "ae82d14e-7fde-4a6d-8d50-55e5ffa09b0a",
+          "width": 0,
+          "x": 64,
+          "y": 384,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -46742,6 +47037,21 @@
           "x": 352,
           "y": 416,
           "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "545d733b-8992-4266-a489-58267e2e4e94",
+          "width": 0,
+          "x": 160,
+          "y": 384,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -49827,14 +50137,14 @@
       "editionSettings": {
         "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 1024,
+        "gridHeight": 768,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5427920802473335,
+        "zoomFactor": 0.3768772036750916,
         "windowMask": false
       }
     },
@@ -52847,6 +53157,66 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "4b17fb6a-46a8-425d-a5aa-558100f51a44",
+          "width": 0,
+          "x": 548,
+          "y": 356,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Alien",
+          "persistentUuid": "9fbfd3af-fd21-45a2-b316-099c019af1cf",
+          "width": 0,
+          "x": 858,
+          "y": 251,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Alien",
+          "persistentUuid": "89687b77-836e-42c8-bda5-e54e84e48ad2",
+          "width": 0,
+          "x": 876,
+          "y": 72,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Robot",
+          "persistentUuid": "ec402660-ac21-47b1-8fd3-12356ca3ed88",
+          "width": 0,
+          "x": 104,
+          "y": 112,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -52859,7 +53229,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5250860067782547,
+        "zoomFactor": 0.5610952083582117,
         "windowMask": false
       }
     },
@@ -53394,6 +53764,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "d362f66c-fd36-4e6b-a55b-4223b6974eb2",
+          "width": 0,
+          "x": 896,
+          "y": 384,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -53884,6 +54269,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "44a69752-c24f-436b-be99-4f07d3ae27fd",
+          "width": 0,
+          "x": 896,
+          "y": 384,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -53896,7 +54296,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4303403802207689,
+        "zoomFactor": 0.5079575118131776,
         "windowMask": false
       }
     },
@@ -54350,6 +54750,21 @@
           "x": 100,
           "y": 221,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "7032edff-402c-4e60-8f01-4dc3cf08957e",
+          "width": 0,
+          "x": 922,
+          "y": 449,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -55022,6 +55437,21 @@
           "x": 64,
           "y": 64,
           "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "65cee897-c4a3-4b72-b54f-e0ff8de37357",
+          "width": 0,
+          "x": 480,
+          "y": 352,
+          "zOrder": 40,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -55725,6 +56155,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "a8a18dc3-7b7e-4a6b-a2ee-e6cd910d5bfd",
+          "width": 0,
+          "x": 928,
+          "y": 384,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "1b5886e1-8783-4e21-a819-a00aa37b278f",
+          "width": 0,
+          "x": 64,
+          "y": 384,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -56000,6 +56460,21 @@
           "x": 887,
           "y": 82,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "3b53a2c3-e268-471c-bdaf-dbc4d618fb74",
+          "width": 0,
+          "x": 496,
+          "y": 367,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -57039,6 +57514,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "c6ea22f3-e26b-4735-88dd-beb676d69045",
+          "width": 0,
+          "x": 928,
+          "y": 64,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "522b5731-7eea-45db-a551-dbbc9ad85423",
+          "width": 0,
+          "x": 96,
+          "y": 672,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -57440,9 +57945,24 @@
           "name": "Drone",
           "persistentUuid": "dd9f8876-7b48-4a58-8f6a-49fcdc4f750c",
           "width": 0,
-          "x": 494,
-          "y": 576,
+          "x": 512,
+          "y": 480,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "97f4bcfe-f3fd-4fe9-b865-bc87eabbdb3d",
+          "width": 0,
+          "x": 512,
+          "y": 128,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -57902,6 +58422,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "f4085605-33b8-48d6-9a73-b5308f954e83",
+          "width": 0,
+          "x": 124,
+          "y": 633,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -57914,7 +58449,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8081094648115849,
+        "zoomFactor": 0.5995738389111133,
         "windowMask": false
       }
     },
@@ -58824,6 +59359,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "5c8baea7-759a-40a6-84a9-875851d170ab",
+          "width": 0,
+          "x": 96,
+          "y": 672,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -59565,6 +60115,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "bf08e4e3-42c3-4dfe-9f9a-dfe4953b2751",
+          "width": 0,
+          "x": 288,
+          "y": 640,
+          "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -59953,6 +60518,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "ca0a9959-0b21-4184-90b8-a94c59a112b8",
+          "width": 0,
+          "x": 856,
+          "y": 525,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -59965,7 +60545,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8081094648115843,
+        "zoomFactor": 0.5079575118131776,
         "windowMask": false
       }
     },
@@ -60384,6 +60964,21 @@
           "x": 57,
           "y": 678,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "b7bcd60b-644c-48ce-8351-b9b7d44b70e1",
+          "width": 0,
+          "x": 838,
+          "y": 609,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -62034,6 +62629,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "93ae24d5-5362-4f37-a9e2-1c7b1f56c2dd",
+          "width": 0,
+          "x": 928,
+          "y": 672,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -62340,6 +62950,21 @@
           "x": 400,
           "y": 167,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "f0fe5b7d-f093-4227-ac8a-60f3a08c7409",
+          "width": 0,
+          "x": 499,
+          "y": 165,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -62726,6 +63351,36 @@
           "x": 512,
           "y": 96,
           "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "54ea7982-dd38-45bd-a163-8f23404c13cc",
+          "width": 0,
+          "x": 832,
+          "y": 608,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "2aeccf76-0a8f-4cde-9908-256e69f4c5ec",
+          "width": 0,
+          "x": 160,
+          "y": 96,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -63519,6 +64174,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "2f33a5a0-d166-4838-9e21-7da158d110a6",
+          "width": 0,
+          "x": 128,
+          "y": 384,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -63531,7 +64201,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5995738389111134,
+        "zoomFactor": 0.6197916666666721,
         "windowMask": false
       }
     },
@@ -64039,6 +64709,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "f2116d49-e606-4dca-89f5-83e91aae16ad",
+          "width": 0,
+          "x": 896,
+          "y": 98,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -64051,7 +64736,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.38958562738273284,
+        "zoomFactor": 0.5427920802473333,
         "windowMask": false
       }
     },
@@ -64465,8 +65150,8 @@
           "name": "Drone",
           "persistentUuid": "c0ae8f10-36c9-4654-9c45-8eff02d27cf9",
           "width": 0,
-          "x": 854,
-          "y": 250,
+          "x": 829,
+          "y": 237,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -64480,8 +65165,8 @@
           "name": "Drone",
           "persistentUuid": "34797fdc-c59f-440b-998d-99f6e3524761",
           "width": 0,
-          "x": 851,
-          "y": 325,
+          "x": 827,
+          "y": 393,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -64517,6 +65202,66 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "EnemySpawn",
+          "persistentUuid": "d9106ade-eb27-4611-a1e9-4be92fb19ea5",
+          "width": 0,
+          "x": 751,
+          "y": 314,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "EnemySpawn",
+          "persistentUuid": "03d8556a-55f0-4454-b6a8-db4845dfe511",
+          "width": 0,
+          "x": 852,
+          "y": 107,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "EnemySpawn",
+          "persistentUuid": "5f5132b7-64cb-456d-9163-1a98c797bd38",
+          "width": 0,
+          "x": 828,
+          "y": 511,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "1ad9fa82-5828-439f-9b51-7731e8966211",
+          "width": 0,
+          "x": 840,
+          "y": 324,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -64529,7 +65274,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.36458333333333803,
+        "zoomFactor": 0.5079575118131797,
         "windowMask": false
       }
     },
@@ -65053,6 +65798,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "a66a43d3-28e6-43b0-99dd-219733b969c6",
+          "width": 0,
+          "x": 843,
+          "y": 180,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -65065,7 +65825,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.41630252177333743,
+        "zoomFactor": 0.5800155239904927,
         "windowMask": false
       }
     },
@@ -65458,6 +66218,81 @@
           "x": 621,
           "y": 523,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "956b4f06-f846-40a4-bace-d74ed94b6a03",
+          "width": 0,
+          "x": 451,
+          "y": 677,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Robot",
+          "persistentUuid": "520f807c-ae3a-45aa-afd7-7423a6fd7f48",
+          "width": 0,
+          "x": 229,
+          "y": 384,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Robot",
+          "persistentUuid": "6b78abd9-8bef-4847-b18c-3ee08dbd49ff",
+          "width": 0,
+          "x": 213,
+          "y": 154,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Robot",
+          "persistentUuid": "73e1fd66-754c-47bd-b538-1ea9943314a8",
+          "width": 0,
+          "x": 826,
+          "y": 110,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Robot",
+          "persistentUuid": "9e7bb70f-4c17-4488-8257-3b07a7c8145f",
+          "width": 0,
+          "x": 820,
+          "y": 358,
+          "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -65891,6 +66726,36 @@
           "x": 160,
           "y": 512,
           "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "e954ebc1-3b5a-40ab-9d3c-50fb0810d5d4",
+          "width": 0,
+          "x": 864,
+          "y": 160,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "bfd63e1e-c041-4fae-86f3-b282c66274b6",
+          "width": 0,
+          "x": 128,
+          "y": 160,
+          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -66342,6 +67207,21 @@
           "x": 96,
           "y": 352,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "41dc7539-3b09-4e61-ad4c-a3bc9ed7db2a",
+          "width": 0,
+          "x": 192,
+          "y": 608,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -66830,6 +67710,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "31bd237f-9119-4339-868c-0d8e082f9986",
+          "width": 0,
+          "x": 64,
+          "y": 384,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -66842,7 +67737,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3895856273827318,
+        "zoomFactor": 0.475358508712697,
         "windowMask": false
       }
     },
@@ -67375,6 +68270,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "d3043f51-80ec-424f-b5c9-36bd61d01d8f",
+          "width": 0,
+          "x": 64,
+          "y": 384,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -67387,7 +68297,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6197916666666713,
+        "zoomFactor": 0.416302521773336,
         "windowMask": false
       }
     },
@@ -68038,6 +68948,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "545ef86b-393c-423c-8873-c880bbe844be",
+          "width": 0,
+          "x": 96,
+          "y": 640,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -68050,7 +68975,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5800155239904905,
+        "zoomFactor": 0.5610952083582113,
         "windowMask": false
       }
     },
@@ -68456,6 +69381,21 @@
           "x": 44,
           "y": 44,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "5dc4bf52-2852-478b-bc99-25d9ae38d96c",
+          "width": 0,
+          "x": 499,
+          "y": 95,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -69021,6 +69961,21 @@
           "x": 192,
           "y": 128,
           "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "32b2b9b0-3433-499d-8e51-27beb4a384df",
+          "width": 0,
+          "x": 480,
+          "y": 96,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -70369,6 +71324,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "cb174f4a-1565-46b6-8c89-daad73509256",
+          "width": 0,
+          "x": 480,
+          "y": 160,
+          "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -71309,6 +72279,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "483b3e8c-6f05-4b98-beec-2268d596a23b",
+          "width": 0,
+          "x": 928,
+          "y": 384,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -71321,7 +72306,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.43034038022076926,
+        "zoomFactor": 0.5079575118131779,
         "windowMask": false
       }
     },
@@ -72395,6 +73380,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "d36ee8d4-6807-4aa2-93a3-81f75fe86aa7",
+          "width": 0,
+          "x": 672,
+          "y": 384,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -72900,6 +73900,21 @@
           "x": 480,
           "y": 160,
           "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "HumanSpawn",
+          "persistentUuid": "28250cb9-be74-4f84-b852-76909b156fa2",
+          "width": 0,
+          "x": 896,
+          "y": 352,
+          "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
