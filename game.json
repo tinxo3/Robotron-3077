@@ -1798,6 +1798,132 @@
         "name": "assets\\BoxHumans.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UpItemRoom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UpItemRoom.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/DownItemRoom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\DownItemRoom.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LeftItemRoom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LeftItemRoom.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/RightItemRoom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\RightItemRoom.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ItemRoomChecker.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ItemRoomChecker.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BoxItemRoom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BoxItemRoom.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BoxItems.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BoxItems.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_ROBOTRON_LASER2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\ROBOTRON_LASER2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Robotron Powerup2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Robotron Powerup",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_Robotron Bala enemigo2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\Robotron Bala enemigo2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_ROBOTRON_POWERSUIT4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\ROBOTRON_POWERSUIT4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Exit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Exit.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Exit.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Exit",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprites_ROBOTRON_POWERSUIT5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sprites\\ROBOTRON_POWERSUIT5",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1845,7 +1971,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5610952083582071,
+        "zoomFactor": 0.30887412163426536,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1860,8 +1986,8 @@
           "name": "play",
           "persistentUuid": "828ec7ea-d2d3-442e-873c-daa82055856c",
           "width": 848,
-          "x": 531,
-          "y": 493,
+          "x": 280,
+          "y": 356,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1871,11 +1997,11 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 306,
+          "height": 301,
           "layer": "",
           "name": "title",
           "persistentUuid": "4f9ba24a-f6bd-4bfd-bed4-23a89d5ed86f",
-          "width": 1918,
+          "width": 1915,
           "x": 3,
           "y": 3,
           "zOrder": 3,
@@ -1892,8 +2018,8 @@
           "name": "quitgood",
           "persistentUuid": "a0c6063a-6950-4723-8431-10d9610936c6",
           "width": 848,
-          "x": 530,
-          "y": 760,
+          "x": 281,
+          "y": 657,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -2040,7 +2166,7 @@
           "content": {
             "text": "[outline=yellow]ROBOTRON 3077[/outline]",
             "opacity": 255,
-            "fontSize": 350,
+            "fontSize": 250,
             "visible": true,
             "color": "0;0;0",
             "fontFamily": "Fonts\\MICRO___.TTF",
@@ -2163,6 +2289,32 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetWindowSize"
+              },
+              "parameters": [
+                "",
+                "1122",
+                "841",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -2216,7 +2368,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3673257545058889,
+        "zoomFactor": 0.20902556228335603,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2284,6 +2436,23 @@
             },
             {
               "name": "DownLeftUpRoom"
+            }
+          ]
+        },
+        {
+          "name": "RoomsItem",
+          "objects": [
+            {
+              "name": "LeftItemRoom"
+            },
+            {
+              "name": "RightItemRoom"
+            },
+            {
+              "name": "DownItemRoom"
+            },
+            {
+              "name": "UpItemRoom"
             }
           ]
         }
@@ -2380,69 +2549,6 @@
           "x": 76,
           "y": 132,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "morebullets",
-          "persistentUuid": "5dfec78d-8206-45dd-898f-b97f794ed415",
-          "width": 0,
-          "x": 554,
-          "y": 343,
-          "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 36,
-          "layer": "",
-          "name": "burst",
-          "persistentUuid": "d9a5f54c-8fab-4b8d-a510-600015694635",
-          "width": 55,
-          "x": 562,
-          "y": 397,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 51,
-          "layer": "",
-          "name": "bulletenhance",
-          "persistentUuid": "cade4570-3fdc-4933-9a78-2e1150cf278d",
-          "width": 47,
-          "x": 579,
-          "y": 285,
-          "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 81,
-          "layer": "",
-          "name": "Armor",
-          "persistentUuid": "5e4672e6-29a9-4165-9282-5f84dbb012db",
-          "width": 152,
-          "x": 529,
-          "y": 431,
-          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7891,9 +7997,9 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "morebullets",
+          "name": "UpItemRoom",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -7911,7 +8017,540 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Sprites\\Robotron Powerup.png",
+                      "image": "assets\\UpItemRoom.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 33,
+                            "y": 736
+                          },
+                          {
+                            "x": 1019,
+                            "y": 736
+                          },
+                          {
+                            "x": 1019,
+                            "y": 763
+                          },
+                          {
+                            "x": 33,
+                            "y": 763
+                          }
+                        ],
+                        [
+                          {
+                            "x": 5,
+                            "y": 5
+                          },
+                          {
+                            "x": 32,
+                            "y": 5
+                          },
+                          {
+                            "x": 32,
+                            "y": 763
+                          },
+                          {
+                            "x": 5,
+                            "y": 763
+                          }
+                        ],
+                        [
+                          {
+                            "x": 992,
+                            "y": 5
+                          },
+                          {
+                            "x": 1019,
+                            "y": 5
+                          },
+                          {
+                            "x": 1019,
+                            "y": 735
+                          },
+                          {
+                            "x": 992,
+                            "y": 735
+                          }
+                        ],
+                        [
+                          {
+                            "x": 33,
+                            "y": 5
+                          },
+                          {
+                            "x": 480,
+                            "y": 5
+                          },
+                          {
+                            "x": 480,
+                            "y": 32
+                          },
+                          {
+                            "x": 33,
+                            "y": 32
+                          }
+                        ],
+                        [
+                          {
+                            "x": 544,
+                            "y": 5
+                          },
+                          {
+                            "x": 991,
+                            "y": 5
+                          },
+                          {
+                            "x": 991,
+                            "y": 32
+                          },
+                          {
+                            "x": 544,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "DownItemRoom",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\DownItemRoom.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 5
+                          },
+                          {
+                            "x": 1019,
+                            "y": 5
+                          },
+                          {
+                            "x": 1019,
+                            "y": 32
+                          },
+                          {
+                            "x": 5,
+                            "y": 32
+                          }
+                        ],
+                        [
+                          {
+                            "x": 5,
+                            "y": 33
+                          },
+                          {
+                            "x": 32,
+                            "y": 33
+                          },
+                          {
+                            "x": 32,
+                            "y": 763
+                          },
+                          {
+                            "x": 5,
+                            "y": 763
+                          }
+                        ],
+                        [
+                          {
+                            "x": 992,
+                            "y": 33
+                          },
+                          {
+                            "x": 1019,
+                            "y": 33
+                          },
+                          {
+                            "x": 1019,
+                            "y": 763
+                          },
+                          {
+                            "x": 992,
+                            "y": 763
+                          }
+                        ],
+                        [
+                          {
+                            "x": 33,
+                            "y": 736
+                          },
+                          {
+                            "x": 480,
+                            "y": 736
+                          },
+                          {
+                            "x": 480,
+                            "y": 763
+                          },
+                          {
+                            "x": 33,
+                            "y": 763
+                          }
+                        ],
+                        [
+                          {
+                            "x": 544,
+                            "y": 736
+                          },
+                          {
+                            "x": 991,
+                            "y": 736
+                          },
+                          {
+                            "x": 991,
+                            "y": 763
+                          },
+                          {
+                            "x": 544,
+                            "y": 763
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "RightItemRoom",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\RightItemRoom.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 5
+                          },
+                          {
+                            "x": 1019,
+                            "y": 5
+                          },
+                          {
+                            "x": 1019,
+                            "y": 32
+                          },
+                          {
+                            "x": 5,
+                            "y": 32
+                          }
+                        ],
+                        [
+                          {
+                            "x": 5,
+                            "y": 33
+                          },
+                          {
+                            "x": 32,
+                            "y": 33
+                          },
+                          {
+                            "x": 32,
+                            "y": 763
+                          },
+                          {
+                            "x": 5,
+                            "y": 763
+                          }
+                        ],
+                        [
+                          {
+                            "x": 33,
+                            "y": 736
+                          },
+                          {
+                            "x": 1019,
+                            "y": 736
+                          },
+                          {
+                            "x": 1019,
+                            "y": 763
+                          },
+                          {
+                            "x": 33,
+                            "y": 763
+                          }
+                        ],
+                        [
+                          {
+                            "x": 992,
+                            "y": 33
+                          },
+                          {
+                            "x": 1019,
+                            "y": 33
+                          },
+                          {
+                            "x": 1019,
+                            "y": 352
+                          },
+                          {
+                            "x": 992,
+                            "y": 352
+                          }
+                        ],
+                        [
+                          {
+                            "x": 992,
+                            "y": 420
+                          },
+                          {
+                            "x": 1019,
+                            "y": 420
+                          },
+                          {
+                            "x": 1019,
+                            "y": 735
+                          },
+                          {
+                            "x": 992,
+                            "y": 735
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "LeftItemRoom",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\LeftItemRoom.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 5
+                          },
+                          {
+                            "x": 1019,
+                            "y": 5
+                          },
+                          {
+                            "x": 1019,
+                            "y": 32
+                          },
+                          {
+                            "x": 5,
+                            "y": 32
+                          }
+                        ],
+                        [
+                          {
+                            "x": 5,
+                            "y": 736
+                          },
+                          {
+                            "x": 1019,
+                            "y": 736
+                          },
+                          {
+                            "x": 1019,
+                            "y": 763
+                          },
+                          {
+                            "x": 5,
+                            "y": 763
+                          }
+                        ],
+                        [
+                          {
+                            "x": 992,
+                            "y": 33
+                          },
+                          {
+                            "x": 1019,
+                            "y": 3
+                          },
+                          {
+                            "x": 1019,
+                            "y": 735
+                          },
+                          {
+                            "x": 992,
+                            "y": 735
+                          }
+                        ],
+                        [
+                          {
+                            "x": 5,
+                            "y": 33
+                          },
+                          {
+                            "x": 32,
+                            "y": 33
+                          },
+                          {
+                            "x": 32,
+                            "y": 352
+                          },
+                          {
+                            "x": 5,
+                            "y": 352
+                          }
+                        ],
+                        [
+                          {
+                            "x": 5,
+                            "y": 420
+                          },
+                          {
+                            "x": 32,
+                            "y": 420
+                          },
+                          {
+                            "x": 32,
+                            "y": 735
+                          },
+                          {
+                            "x": 5,
+                            "y": 735
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "morebullets",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Sprites\\Robotron Powerup",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sprites\\Robotron Powerup",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -7973,7 +8612,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Sprites\\ROBOTRON_LASER",
+                      "image": "Sprites\\ROBOTRON_LASER2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -7989,20 +8628,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 640,
-                            "y": 20
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 1280,
-                            "y": 20
+                            "x": 52,
+                            "y": 0
                           },
                           {
-                            "x": 1280,
-                            "y": 640
+                            "x": 52,
+                            "y": 50
                           },
                           {
-                            "x": 640,
-                            "y": 640
+                            "x": 0,
+                            "y": 50
                           }
                         ]
                       ]
@@ -8035,7 +8674,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Sprites\\Robotron Bala enemigo",
+                      "image": "Sprites\\Robotron Bala enemigo2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -8051,20 +8690,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 40,
-                            "y": 40
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 280,
-                            "y": 40
+                            "x": 52,
+                            "y": 0
                           },
                           {
-                            "x": 280,
-                            "y": 280
+                            "x": 52,
+                            "y": 52
                           },
                           {
-                            "x": 40,
-                            "y": 280
+                            "x": 0,
+                            "y": 52
                           }
                         ]
                       ]
@@ -8097,7 +8736,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Sprites\\ROBOTRON_POWERSUIT3",
+                      "image": "Sprites\\ROBOTRON_POWERSUIT5",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -8113,20 +8752,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 263,
-                            "y": 150
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 397,
-                            "y": 150
+                            "x": 52,
+                            "y": 0
                           },
                           {
-                            "x": 397,
-                            "y": 490
+                            "x": 52,
+                            "y": 52
                           },
                           {
-                            "x": 263,
-                            "y": 490
+                            "x": 0,
+                            "y": 52
                           }
                         ]
                       ]
@@ -8600,6 +9239,165 @@
                           {
                             "x": 0,
                             "y": 298
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "ItemRoomChecker",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\ItemRoomChecker.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 994,
+                            "y": 0
+                          },
+                          {
+                            "x": 994,
+                            "y": 738
+                          },
+                          {
+                            "x": 0,
+                            "y": 738
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "ItemRoomSpawner",
+          "tags": "",
+          "texture": "assets\\BoxItemRoom.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "ItemSpawn",
+          "tags": "",
+          "texture": "assets\\BoxItems.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "ItemSpawn2",
+          "tags": "",
+          "texture": "assets\\BoxItems.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Exit",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "assets\\Exit",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Exit",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
                           }
                         ]
                       ]
@@ -9411,6 +10209,35 @@
               },
               "parameters": [
                 "player",
+                "RoomsItem",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "RoomsItem",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
                 "car1",
                 "",
                 "",
@@ -9760,6 +10587,52 @@
               "parameters": [
                 "bullet",
                 "Rooms",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bullet",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.01"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "bullet",
+                "RoomsItem",
                 "",
                 "",
                 ""
@@ -10395,6 +11268,308 @@
                 "0.5",
                 "0",
                 "0",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Rooms",
+                "ItemRoomChecker",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Rooms",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "car1",
+                "ItemRoomChecker",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "car1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Drone",
+                "ItemRoomChecker",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Drone",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Alien",
+                "ItemRoomChecker",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Alien",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Robot",
+                "ItemRoomChecker",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Robot",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "wall",
+                "ItemRoomChecker",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "wall",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "HumanSpawn",
+                "ItemRoomChecker",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "HumanSpawn",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "human",
+                "ItemRoomChecker",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "human",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "Exit",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "human_rescued",
+                "<",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "Exit",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "Exit",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "human_rescued",
+                ">=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main menu\"",
                 ""
               ]
             }
@@ -11811,7 +12986,7 @@
                       "parameters": [
                         "NumberOfRooms",
                         "<",
-                        "15"
+                        "16"
                       ]
                     }
                   ],
@@ -12785,7 +13960,7 @@
                       "parameters": [
                         "NumberOfRooms",
                         ">=",
-                        "15"
+                        "16"
                       ]
                     }
                   ],
@@ -12987,7 +14162,7 @@
                       "parameters": [
                         "NumberOfRooms",
                         "<",
-                        "15"
+                        "16"
                       ]
                     }
                   ],
@@ -13961,7 +15136,7 @@
                       "parameters": [
                         "NumberOfRooms",
                         ">=",
-                        "15"
+                        "16"
                       ]
                     }
                   ],
@@ -14163,7 +15338,7 @@
                       "parameters": [
                         "NumberOfRooms",
                         "<",
-                        "15"
+                        "16"
                       ]
                     }
                   ],
@@ -15137,7 +16312,7 @@
                       "parameters": [
                         "NumberOfRooms",
                         ">=",
-                        "15"
+                        "16"
                       ]
                     }
                   ],
@@ -15339,7 +16514,7 @@
                       "parameters": [
                         "NumberOfRooms",
                         "<",
-                        "15"
+                        "16"
                       ]
                     }
                   ],
@@ -15999,7 +17174,7 @@
                                 "",
                                 "\"RightDownLeft3WayRoom1\"",
                                 "Left.X()",
-                                "Left.X()"
+                                "Left.Y()"
                               ]
                             }
                           ]
@@ -16313,7 +17488,7 @@
                       "parameters": [
                         "NumberOfRooms",
                         ">=",
-                        "15"
+                        "16"
                       ]
                     }
                   ],
@@ -16380,7 +17555,7 @@
                           "parameters": [
                             "",
                             "\"RightDeadEndRoom2\"",
-                            "Left.Y()",
+                            "Left.X()",
                             "Right.Y()"
                           ]
                         }
@@ -16455,15 +17630,301 @@
                         "Left",
                         ""
                       ]
-                    },
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NumberOfRooms",
+                ">=",
+                "16"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "",
+                "RoomsItem",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "ItemRoomRandom",
+                "=",
+                "RandomInRange(1,4)"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ItemRoomRandom",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
-                        "value": "ModVarScene"
+                        "value": "AjoutHasard"
                       },
                       "parameters": [
-                        "NumberOfRooms",
-                        "+",
-                        "1"
+                        "",
+                        "UpDeadEnd"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PickNearest"
+                          },
+                          "parameters": [
+                            "ItemRoomSpawner",
+                            "UpDeadEnd.X()",
+                            "UpDeadEnd.Y()",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                          },
+                          "parameters": [
+                            "",
+                            "\"UpItemRoom\"",
+                            "UpDeadEnd.X()",
+                            "UpDeadEnd.Y()"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ItemRoomRandom",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutHasard"
+                      },
+                      "parameters": [
+                        "",
+                        "RightDeadEnd"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PickNearest"
+                          },
+                          "parameters": [
+                            "ItemRoomSpawner",
+                            "RightDeadEnd.X()",
+                            "RightDeadEnd.Y()",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                          },
+                          "parameters": [
+                            "",
+                            "\"RightItemRoom\"",
+                            "RightDeadEnd.X()",
+                            "RightDeadEnd.Y()"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ItemRoomRandom",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutHasard"
+                      },
+                      "parameters": [
+                        "",
+                        "DownDeadEnd"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PickNearest"
+                          },
+                          "parameters": [
+                            "ItemRoomSpawner",
+                            "DownDeadEnd.X()",
+                            "DownDeadEnd.Y()",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                          },
+                          "parameters": [
+                            "",
+                            "\"DownItemRoom\"",
+                            "DownDeadEnd.X()",
+                            "DownDeadEnd.Y()"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ItemRoomRandom",
+                    "=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutHasard"
+                      },
+                      "parameters": [
+                        "",
+                        "LeftDeadEnd"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PickNearest"
+                          },
+                          "parameters": [
+                            "ItemRoomSpawner",
+                            "LeftDeadEnd.X()",
+                            "LeftDeadEnd.Y()",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                          },
+                          "parameters": [
+                            "",
+                            "\"LeftItemRoom\"",
+                            "LeftDeadEnd.X()",
+                            "LeftDeadEnd.Y()"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -16471,6 +17932,46 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "ItemRoomSpawner",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "RoomsItem",
+                    ">=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ItemRoomSpawner",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -16542,7 +18043,7 @@
               "parameters": [
                 "NumberOfRooms",
                 "<",
-                "14"
+                "15"
               ]
             }
           ],
@@ -16858,6 +18359,269 @@
                 "=",
                 "6",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "ItemSpawn",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutHasard"
+                  },
+                  "parameters": [
+                    "EnemySpawn",
+                    "ItemSpawn"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "ItemSpawn",
+                    "RandomItem",
+                    "=",
+                    "RandomInRange(1,3)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "ItemSpawn",
+                        "RandomItem",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "morebullets",
+                        "ItemSpawn.X()",
+                        "ItemSpawn.Y()",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "ItemSpawn",
+                        "RandomItem",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "burst",
+                        "ItemSpawn.X()",
+                        "ItemSpawn.Y()",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "ItemSpawn",
+                        "RandomItem",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Armor",
+                        "ItemSpawn.X()",
+                        "ItemSpawn.Y()",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ItemSpawn",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "ItemSpawn2",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutHasard"
+                  },
+                  "parameters": [
+                    "EnemySpawn",
+                    "ItemSpawn2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "ItemSpawn2",
+                    "RandomItem",
+                    "=",
+                    "RandomInRange(1,100)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "ItemSpawn2",
+                        "RandomItem",
+                        ">=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "ItemSpawn2",
+                        "RandomItem",
+                        "<=",
+                        "85"
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "ItemSpawn2",
+                        "RandomItem",
+                        ">=",
+                        "86"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "ItemSpawn2",
+                        "RandomItem",
+                        "<=",
+                        "100"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "bulletenhance",
+                        "ItemSpawn2.X()",
+                        "ItemSpawn2.Y()",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "ItemSpawn2",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -35782,6 +37546,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Exit",
+          "persistentUuid": "fe219960-5688-49ba-a9c8-bca364c2d423",
+          "width": 0,
+          "x": 160,
+          "y": 576,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -35794,7 +37573,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6406912462476659,
+        "zoomFactor": 0.7562477198107517,
         "windowMask": false
       }
     },
@@ -47753,7 +49532,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5079575118131789,
+        "zoomFactor": 0.30887412163426864,
         "windowMask": false
       }
     },
@@ -52890,7 +54669,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4753585087126984,
+        "zoomFactor": 0.43034038022077004,
         "windowMask": false
       }
     },
@@ -57538,7 +59317,7 @@
           "name": "HumanSpawn",
           "persistentUuid": "522b5731-7eea-45db-a551-dbbc9ad85423",
           "width": 0,
-          "x": 96,
+          "x": 64,
           "y": 672,
           "zOrder": 25,
           "numberProperties": [],
@@ -57978,7 +59757,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6406912462476536,
+        "zoomFactor": 0.6622955665506441,
         "windowMask": false
       }
     },
@@ -66296,19 +68075,34 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "6389a283-0807-44ab-8e26-c66177a76438",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 1024,
-        "gridHeight": 768,
+        "gridWidth": 32,
+        "gridHeight": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.49138775453293965,
+        "snap": true,
+        "zoomFactor": 0.5427920802473323,
         "windowMask": false
       }
     },
@@ -66756,6 +68550,21 @@
           "x": 128,
           "y": 160,
           "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "e18c5eda-a3c7-4db3-8984-d4e40393b620",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -67222,6 +69031,21 @@
           "x": 192,
           "y": 608,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "ba9329ac-9894-4623-930c-1cedbba0d6bc",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -67725,19 +69549,34 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "e412c51e-d894-4d8d-9da5-62a432c49fe8",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
         "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 1024,
+        "gridHeight": 768,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.475358508712697,
+        "zoomFactor": 0.4163025217733361,
         "windowMask": false
       }
     },
@@ -68285,6 +70124,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "5fbbb224-44ae-4b0b-8fbb-94bf5416be0d",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -68297,7 +70151,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.416302521773336,
+        "zoomFactor": 0.27050126039625716,
         "windowMask": false
       }
     },
@@ -68963,6 +70817,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "05eecffa-e5d3-42c0-b196-04651f366f13",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -68975,7 +70844,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5610952083582113,
+        "zoomFactor": 0.4448515998886685,
         "windowMask": false
       }
     },
@@ -69399,10 +71268,25 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "d47c3b94-6d02-4a88-b4b2-a68eeaf22068",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -69410,7 +71294,7 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
+        "snap": true,
         "zoomFactor": 0.5079575118131775,
         "windowMask": false
       }
@@ -69976,6 +71860,21 @@
           "x": 480,
           "y": 96,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "95310831-3422-4016-bf1c-7002650d3222",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -71339,6 +73238,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "4cfeafe5-c7b2-41cc-9725-47048a132a38",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -72291,6 +74205,21 @@
           "x": 928,
           "y": 384,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "b95ea5e7-7ad0-4016-b22c-a9d05b10eec3",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -73395,13 +75324,28 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "f779fe74-9863-49d7-a4f8-694c8b11d854",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
         "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 1024,
+        "gridHeight": 768,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
@@ -73918,6 +75862,207 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomSpawner",
+          "persistentUuid": "bbae8533-4d2c-4b58-b915-a3f77a24b40a",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 1024,
+        "gridHeight": 768,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.41630252177333654,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Gameplay",
+      "name": "UpItemRoom",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 751,
+          "layer": "",
+          "name": "room_change",
+          "persistentUuid": "1464dc09-4440-4458-b2ea-a4ad1101ad71",
+          "width": 1010,
+          "x": 0,
+          "y": 0,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 779,
+          "layer": "",
+          "name": "concrete",
+          "persistentUuid": "e8cdfc9b-1285-45b2-8862-aada7de82c7e",
+          "width": 1016,
+          "x": 3,
+          "y": -16,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "UpItemRoom",
+          "persistentUuid": "85620561-fed7-433a-a9fa-e58e106d0ca2",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "055d7792-6f59-4d41-82e9-77a4bbf71446",
+          "width": 0,
+          "x": 416,
+          "y": 288,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "557695ae-7dea-454f-9851-27d706e357bd",
+          "width": 0,
+          "x": 416,
+          "y": 448,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "04bae89a-3c16-4d33-b853-ce5df268c930",
+          "width": 0,
+          "x": 576,
+          "y": 288,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "dcc1759b-917b-4280-88d1-093ed50f3379",
+          "width": 0,
+          "x": 576,
+          "y": 448,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomChecker",
+          "persistentUuid": "113a9ad0-db25-4bb6-abf4-922447a99df5",
+          "width": 0,
+          "x": 0,
+          "y": 32,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomChecker",
+          "persistentUuid": "8c7448b0-f28d-4e79-9661-37476707983b",
+          "width": 0,
+          "x": 18,
+          "y": 14,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemSpawn",
+          "persistentUuid": "f5dfd5df-f759-48fb-b339-ca7fc25c477c",
+          "width": 0,
+          "x": 544,
+          "y": 384,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemSpawn2",
+          "persistentUuid": "841db817-32d0-47cd-bc73-dbd94b4f9479",
+          "width": 0,
+          "x": 448,
+          "y": 384,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -73930,7 +76075,520 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4598521426736374,
+        "zoomFactor": 0.7077142870146713,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Gameplay",
+      "name": "RightItemRoom",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 757,
+          "layer": "",
+          "name": "room_change",
+          "persistentUuid": "ddb10158-b1d8-41a3-b58f-224ed683ae74",
+          "width": 1017,
+          "x": 0,
+          "y": 0,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 758,
+          "layer": "",
+          "name": "concrete",
+          "persistentUuid": "a4dcbca0-7a10-459a-9e5c-0b8f4f396ed3",
+          "width": 1039,
+          "x": 1,
+          "y": 2,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "RightItemRoom",
+          "persistentUuid": "5de60201-bee5-4f73-989c-4b9af1a08c44",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "3a710b6b-6c63-4abd-8583-55c250a9b219",
+          "width": 0,
+          "x": 608,
+          "y": 288,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "a7826dd7-644d-4cb0-a865-e07d560e011c",
+          "width": 0,
+          "x": 416,
+          "y": 288,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "320b4d0b-2837-4cc9-b791-5772b546990f",
+          "width": 0,
+          "x": 608,
+          "y": 448,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "42fc76a3-3c6c-4504-bfe0-009ac77f0f29",
+          "width": 0,
+          "x": 416,
+          "y": 448,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomChecker",
+          "persistentUuid": "471a68cd-b238-416e-9c78-1155959690f0",
+          "width": 0,
+          "x": 17,
+          "y": 16,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemSpawn",
+          "persistentUuid": "ceebf593-0d63-4ef9-bcf3-09f6e214dcf4",
+          "width": 0,
+          "x": 576,
+          "y": 384,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemSpawn2",
+          "persistentUuid": "93bbd44d-45be-4008-b67d-43facf03f23e",
+          "width": 0,
+          "x": 448,
+          "y": 384,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.5250860067782547,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Gameplay",
+      "name": "DownItemRoom",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 759,
+          "layer": "",
+          "name": "room_change",
+          "persistentUuid": "d550a052-e610-4382-974e-5602a04517b8",
+          "width": 1014,
+          "x": 0,
+          "y": 0,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 787,
+          "layer": "",
+          "name": "concrete",
+          "persistentUuid": "8119fa8d-9a48-4951-a124-8787c7359d48",
+          "width": 1023,
+          "x": 0,
+          "y": 1,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "DownItemRoom",
+          "persistentUuid": "e604a3f3-a657-45d0-be83-f6ed8ad2ca5f",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "99c7db89-6e11-457f-b488-89e5f7dd7e8d",
+          "width": 0,
+          "x": 576,
+          "y": 448,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "6f6b809c-502d-4bf8-a198-a183e3061b53",
+          "width": 0,
+          "x": 416,
+          "y": 448,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "bacf4476-1dbc-46ee-9c21-f7bc0e6acca6",
+          "width": 0,
+          "x": 576,
+          "y": 288,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "3f6ca49b-b853-4ded-b05d-028b01444484",
+          "width": 0,
+          "x": 416,
+          "y": 288,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomChecker",
+          "persistentUuid": "614311f1-bca2-4463-af8c-d2e3adfea3dc",
+          "width": 0,
+          "x": 17,
+          "y": 18,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemSpawn",
+          "persistentUuid": "0eba1412-50ee-415b-8676-e10d0b9f1d4d",
+          "width": 0,
+          "x": 544,
+          "y": 352,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemSpawn2",
+          "persistentUuid": "1ac11ff1-7597-4788-a773-98f1b7e61196",
+          "width": 0,
+          "x": 448,
+          "y": 352,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.5800155239904908,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Gameplay",
+      "name": "LeftItemRoom",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 746,
+          "layer": "",
+          "name": "room_change",
+          "persistentUuid": "758f595d-8051-4cb8-bba8-e1b806f6203a",
+          "width": 1010,
+          "x": 0,
+          "y": 0,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 755,
+          "layer": "",
+          "name": "concrete",
+          "persistentUuid": "0a6c3905-7a76-4ffc-958f-b04104e2db02",
+          "width": 1036,
+          "x": -19,
+          "y": 1,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "LeftItemRoom",
+          "persistentUuid": "f59ae035-5916-4fca-899e-b66e7b8ba1e2",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "f279d854-e517-431b-a647-9a0ce93db529",
+          "width": 0,
+          "x": 416,
+          "y": 288,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "e2dea9dd-4906-4727-a1b2-b51de04225c3",
+          "width": 0,
+          "x": 416,
+          "y": 448,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "5e0bd8ef-b765-4ec6-a1ef-cb03b36ae217",
+          "width": 0,
+          "x": 608,
+          "y": 448,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "wall",
+          "persistentUuid": "31050e02-7bf3-4aa8-8af6-b5fe9c187be4",
+          "width": 0,
+          "x": 608,
+          "y": 288,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemRoomChecker",
+          "persistentUuid": "d6bb5234-571c-449d-9842-78e5fb7f53c1",
+          "width": 0,
+          "x": 14,
+          "y": 15,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemSpawn",
+          "persistentUuid": "ccd8bbdc-465e-4bc0-90b2-09c56c7cef7c",
+          "width": 0,
+          "x": 576,
+          "y": 384,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ItemSpawn2",
+          "persistentUuid": "29244c48-dd47-4cda-b9b9-eb8e8392bfcb",
+          "width": 0,
+          "x": 448,
+          "y": 384,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.5427920802473326,
         "windowMask": false
       }
     }
